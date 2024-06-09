@@ -16,7 +16,7 @@ const Sidebar = () => {
                     <Icon className="text-2xl mr-2" icon="fluent:top-speed-20-filled"/>
                     Dashboard
                 </Link>
-                <Link href="/dashboard" className="flex hover:bg-[#607EAA] p-2 rounded-xl">
+                <Link href="/dashboard/users" className="flex hover:bg-[#607EAA] p-2 rounded-xl">
                     <Icon className="text-2xl mr-2" icon="ph:user"/>
                     Data Pengguna
                 </Link>
