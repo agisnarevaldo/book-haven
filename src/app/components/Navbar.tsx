@@ -1,8 +1,40 @@
+"use client";
+
 import Image from "next/image";
 import {Input} from "@nextui-org/react";
 import {SearchIcon} from "@nextui-org/shared-icons";
 
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+
 const Navbar = () => {
+    const pathname = usePathname();
+    const [title, setTitle] = useState('');
+    useEffect(() => {
+        const getTitle = () => {
+            switch (pathname) {
+                case '/dashboard':
+                    return `Dashboard`;
+                case '/dashboard/users':
+                    return 'Tambah Data Anggota';
+                case '/dashboard/buku':
+                    return 'Data Buku';
+                case '/dashboard/rak':
+                    return 'Data Rak/lokasi';
+                case '/dashboard/kategori':
+                    return 'Kategori';
+                case '/dashboard/peminjaman':
+                    return 'Data Peminjaman';
+                case '/dashboard/pengembalian':
+                    return 'Data Pengembalian';
+                case '/dashboard/denda':
+                    return 'Data Denda';
+                default:
+                    return 'Dashboard';
+            }
+        };
+        setTitle(getTitle());
+    }, [pathname]);
     return (
         <nav className="bg-primary flex p-4 text-text justify-between items-center m-2 rounded-3xl">
             <div className="logo flex items-center gap-3">
@@ -10,8 +42,7 @@ const Navbar = () => {
                 <p className="text-text text-sm">Sistem Perpustakaan <br/> <span>SMP Negeri Cikoneng</span></p>
             </div>
             <div className="flex items-end gap-1.5">
-                <h1 className="text-3xl font-bold">Dashboard</h1>
-                <p className="text-sm">Control Panel</p>
+                <h1 className="text-3xl font-bold">{title}</h1>
             </div>
             <div className="flex items-center gap-2">
                 <Input
