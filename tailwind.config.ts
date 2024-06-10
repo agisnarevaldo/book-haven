@@ -1,5 +1,5 @@
-import type {Config} from "tailwindcss";
-import {nextui} from "@nextui-org/react";
+import type { Config } from "tailwindcss";
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
     content: [
@@ -21,6 +21,10 @@ const config: Config = {
                 "text": "#F5F5F5",
                 "text-dark": "#323332"
             },
+            boxShadow: {
+                '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+                '4xl': '0 50px 70px -20px rgba(0, 0, 0, 0.8)',
+            }
         },
     },
     plugins: [nextui()],
