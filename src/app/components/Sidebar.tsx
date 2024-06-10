@@ -24,21 +24,21 @@ const Sidebar = () => {
                     <AccordionItem key="1" aria-label="Accordion 1" title={
                         <p className="text-white">Master Data</p>
                     }
-                       startContent={
-                           <Icon fontSize={24} icon="fluent:document-data-16-regular" />
-                       }
+                        startContent={
+                        <Icon fontSize={24} icon="fluent:document-data-16-regular" />
+                        }
                     >
                         {
                             <>
-                                <Link href="/Dashboard" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
+                                <Link href="/dashboard/buku" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
                                     <Icon className="text-2xl mr-2" icon="fluent:book-32-regular" />
                                     Data Buku
                                 </Link>
-                                <Link href="/Dashboard" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
+                                <Link href="/dashboard/kategori" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
                                     <Icon className="text-2xl mr-2" icon="carbon:category-new-each" />
                                     Kategori
                                 </Link>
-                                <Link href="/Dashboard" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
+                                <Link href="/dashboard/rak" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
                                     <Icon className="text-2xl mr-2" icon="hugeicons:right-to-left-list-dash" />
                                     Rak
                                 </Link>
@@ -48,17 +48,17 @@ const Sidebar = () => {
                     <AccordionItem key="2" aria-label="Accordion 2" title={
                         <p className="text-white">Transaksi</p>
                     }
-                                   startContent={
-                                       <Icon className="text-2xl mr-2" icon="codicon:arrow-swap" />
-                                   }
+                                    startContent={
+                                        <Icon className="text-2xl mr-2" icon="codicon:arrow-swap" />
+                                    }
                     >
                         {
                             <>
-                                <Link href="/Dashboard" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
+                                <Link href="/dashboard/peminjaman" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
                                     <Icon className="text-2xl mr-2" icon="mingcute:arrow-to-up-line" />
                                     Peminjaman
                                 </Link>
-                                <Link href="/Dashboard" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
+                                <Link href="/dashboard/pengembalian" className="flex hover:bg-[#607EAA] my-1 p-2 rounded-xl">
                                     <Icon className="text-2xl mr-2" icon="mingcute:arrow-to-down-line" />
                                     Pengembalian
                                 </Link>
@@ -66,11 +66,11 @@ const Sidebar = () => {
                         }
                     </AccordionItem>
                 </Accordion>
-                <Link href="/dashboard" className="flex hover:bg-[#607EAA] p-2 rounded-xl">
-                    <Icon className="text-2xl mr-2" icon="fluent:top-speed-20-filled"/>
+                <Link href="/dashboard/denda" className="flex hover:bg-[#607EAA] p-2 rounded-xl">
+                    <Icon className="text-2xl mr-2" icon="ph:money-light" />
                     Denda
                 </Link>
-                <Link href="/dashboard" className="flex hover:bg-[#607EAA] p-2 rounded-xl">
+                <Link href="/" className="flex hover:bg-[#607EAA] p-2 rounded-xl">
                     <Icon className="text-2xl mr-2" icon="streamline:interface-logout-arrow-exit-frame-leave-logout-rectangle-right" />
                     Keluar
                 </Link>
