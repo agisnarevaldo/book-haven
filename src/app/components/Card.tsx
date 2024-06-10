@@ -11,7 +11,7 @@ type Props = {
 
 export default function Card (props: Props) {
     return (
-        <div className={`${props.bg} flex flex-col justify-between shadow-md w-[265px] rounded-2xl`}>
+        <div className={`${props.bg} flex flex-col justify-between shadow-lg w-[265px] rounded-2xl`}>
             <div className="flex justify-between p-4">
                 <div className="text-text">
                     <h1 className="text-[40px]">
