@@ -4,6 +4,7 @@ import Link from "next/link";
 import {Icon} from "@iconify/react";
 import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
+import ModalLogout from "@/app/components/modalLogout";
 
 const Sidebar = () => {
     const defaultContent = (
@@ -70,10 +71,7 @@ const Sidebar = () => {
                     <Icon className="text-2xl mr-2" icon="ph:money-light" />
                     Denda
                 </Link>
-                <Link href="/" className="flex hover:bg-[#607EAA] p-2 rounded-xl">
-                    <Icon className="text-2xl mr-2" icon="streamline:interface-logout-arrow-exit-frame-leave-logout-rectangle-right" />
-                    Keluar
-                </Link>
+                <ModalLogout />
             </ul>
         </aside>
     );
