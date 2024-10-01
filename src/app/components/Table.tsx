@@ -66,7 +66,7 @@ const DataViewer: React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/api/read');
+                const response = await fetch('/api/read-book');
                 if (!response.ok) {
                     throw new Error('Data fetch failed');
                 }
